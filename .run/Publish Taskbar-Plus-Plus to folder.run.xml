@@ -1,0 +1,10 @@
+﻿<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Publish Taskbar-Plus-Plus to folder" type="DotNetFolderPublish" factoryName="Publish to folder">
+    <riderPublish configuration="Release" platform="Any CPU" produce_single_file="true" target_folder="$PROJECT_DIR$/build" target_framework="netcoreapp3.1" uuid_high="-3938405045175104362" uuid_low="-4889129180445615363">
+      <runtimes>
+        <item value="win-x64" />
+      </runtimes>
+    </riderPublish>
+    <method v="2" />
+  </configuration>
+</component>

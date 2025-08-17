@@ -1,0 +1,49 @@
+﻿<Window x:Class="Taskbar_Plus_Plus.Windows.TaskbarPlusPlus"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Taskbar++ Shortcut Creator"
+        Width="562" Height="360"
+        ResizeMode="NoResize" WindowStartupLocation="CenterScreen"
+        WindowStyle="SingleBorderWindow">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        
+        <TextBlock Text="Create a TB++ Shortcut" FontSize="20" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="SemiBold"/>
+
+        <!-- Contenu -->
+        <StackPanel Grid.Row="1" Margin="4,12,4,8" VerticalAlignment="Top">
+            <TextBlock Text="Shortcut name" Foreground="#000" Margin="2,6,2,0"/>
+            <TextBox x:Name="TxtName" MinWidth="360"/>
+
+            <TextBlock Text="Linked folder" Foreground="#000" Margin="2,6,2,0"/>
+            <DockPanel>
+                <TextBox x:Name="LinkedFolderInput" Margin="0,0,8,0" MinWidth="360" IsReadOnly="True"/>
+                <Button Content="Browse..." Click="BrowseLinkedFolder" MinWidth="110"/>
+            </DockPanel>
+
+            <TextBlock Text="Shortcut icon (*.ico,*.exe,*.dll)" Foreground="#000" Margin="2,6,2,0"/>
+            <DockPanel>
+                <TextBox x:Name="IconPathInput" Margin="0,0,8,0" MinWidth="360" IsReadOnly="True"/>
+                <Button Content="Browse..." Click="BrowseShortcutIcon" MinWidth="110"/>
+            </DockPanel>
+        </StackPanel>
+        <StackPanel Grid.Row="2">
+            <TextBlock Foreground="Red">
+                Every shortcut created will be placed in the <Run FontWeight="Bold">TPP-Shortcuts</Run> folder next to the Taskbar++ executable.
+            </TextBlock>
+            <TextBlock Foreground="Gray">
+                <Run FontWeight="Bold">Note:</Run> If the folder does not exist, it will be created automatically.
+            </TextBlock>
+        </StackPanel>
+
+        <!-- Actions -->
+        <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button Content="Create shortcut" Padding="14,6" Margin="0,8,0,0" Click="CreateShortcut_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

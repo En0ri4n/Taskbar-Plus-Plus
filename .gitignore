@@ -1,0 +1,9 @@
+bin/
+obj/
+/packages/
+riderModule.iml
+/_ReSharper.Caches/
+.idea/
+Test/
+build/
+/Taskbar-Plus-Plus.sln.DotSettings.user
