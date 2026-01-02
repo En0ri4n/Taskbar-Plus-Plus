@@ -11,6 +11,8 @@ A Windows desktop utility that enhances your taskbar experience by allowing you 
 - **Quick Access**: Launch applications and files directly from the popup toolbar
 - **Auto-Close**: Popup automatically closes when it loses focus, behaving like native Windows context menus
 
+<img src="https://i.ibb.co/nMfRH4mQ/TPP.gif"/>
+
 ## 📋 Requirements
 
 - Windows OS (Windows 10 or later recommended)
