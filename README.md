@@ -2,6 +2,8 @@
 
 A Windows desktop utility that enhances your taskbar experience by allowing you to create custom shortcuts that open popup toolbars with quick access to folders and applications.
 
+## <a href="https://i.ibb.co/nMfRH4mQ/TPP.gif">Taskbar++ Demo<a/>
+
 ## 🌟 Features
 
 - **Custom Taskbar Shortcuts**: Create shortcuts that can be pinned to your Windows taskbar
