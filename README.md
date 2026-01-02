@@ -112,13 +112,13 @@ Taskbar-Plus-Plus/
 
 - **Framework**: .NET Core 3.1 with WPF
 - **UI**: Windows Presentation Foundation (WPF)
-- **Dependencies**: 
+- **Dependencies**:
   - FolderBrowserEx (v1.0.1) - Enhanced folder browser dialog
 
 ## ⚠️ Known Limitations
 
 - Automatic pinning to taskbar via code is not currently supported by Windows - users must manually pin shortcuts
-- The popup tooltip horizontal centering is currently not working as expected
+- The popup toolbar tooltip horizontal centering is currently not working as expected
 
 ## 🤝 Contributing
 
